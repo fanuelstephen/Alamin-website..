@@ -69,7 +69,7 @@ button {
   background: none;
   border: 2px solid var(--primaryColor);
 }
-/* ==========HEADER STYLE */
+/* ----------=HEADER STYLE-------------*/
 header {
   background-color: var(--headingColor);
   height: 10vh;
@@ -92,10 +92,13 @@ header a {
   display: none;
 }
 
-/* navigation media queries */
+/* --------------navigation media queries ---------------*/
 @media screen and (max-width: 768px) {
   header .nav {
     display: none;
+  }
+  .log img {
+    height: 50px;
   }
   header a {
     width: 100%;
@@ -116,8 +119,9 @@ header a {
     background-color: var(--headingColor);
   }
 }
-/* ==========//HEADER STYLE */
-/* ==========HERO */
+/* -------//HEADER STYLE---------- */
+
+/* -------------HERO------------- */
 .hero {
   position: relative;
 }
@@ -151,8 +155,8 @@ header a {
   text-align: center;
   margin-bottom: 60px;
 }
-/* ==========//HERO */
-/* ---------about */
+/* ==========//HERO--------- */
+/* ---------about---------- */
 .about {
   padding: 100px 0;
 }
@@ -163,14 +167,17 @@ header a {
   text-align: left;
   margin: 0;
 }
+.left img {
+  width: 100%;
+}
 .left {
   width: 35%;
 }
 .right {
   width: 65%;
 }
-/* ---------//about */
-/* ---------/SERVICES */
+/* ---------//about---------------- */
+/* ---------/SERVICES -------------*/
 
 .grid3 {
   display: grid;
@@ -188,7 +195,7 @@ header a {
 .services h3 {
   margin-top: 20px;
 }
-/* counter */
+/* ---------------counter--------------- */
 .service,
 .box {
   display: flex;
@@ -214,7 +221,7 @@ header a {
   margin: 0;
   font-size: 30px;
 }
-/* portfolio */
+/* ----------------portfolio------------- */
 article {
   margin-top: 50px;
   margin-bottom: 80px;
@@ -270,7 +277,8 @@ article.box:hover .overlay::after {
   text-transform: capitalize;
   margin-right: 20px;
 }
-/* testimonial */
+
+/* -----------testimonial------------- */
 .testimonial {
   display: flex;
   align-items: center;
@@ -313,16 +321,20 @@ label {
   margin: 10px 0;
   display: inline-block;
 }
+/* ----------blog--------- */
 .blog {
-  width: 100%;
+  width: 30%;
 }
+
 .blog .box {
   background-color: var(--primaryBackground);
   border-radius: 10px;
 }
 .blog .text {
   padding: 10px 30px;
+  font-size: 12px;
 }
+
 /* contact */
 .content {
   margin: 40px 0;
@@ -335,7 +347,6 @@ label {
 .contact .flex input:nth-child(1) {
   margin-right: 10px;
 }
-
 .contact button,
 .contact textarea,
 .contact input {
@@ -389,5 +400,38 @@ footer i {
   .grid3,
   .grid4 {
     grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media screen and (max-width: 375px) {
+  .grid3,
+  .grid4 {
+    grid-template-columns: 1fr;
+  }
+
+  .about .flexsb {
+    flex-direction: column;
+    gap: 25px;
+    text-align: center;
+  }
+  .hero {
+    height: 80vh;
+  }
+  .about h2 {
+    text-transform: uppercase;
+  }
+  .about p {
+    text-align: left;
+  }
+  .catButton {
+    flex-direction: column;
+    margin: 13rem 0 0 0px;
+    align-items: center;
+  }
+  .blog {
+    width: 5%;
+    margin-top: 13rem;
+  }
+  .blog .heading {
+    text-align: center;
   }
 }

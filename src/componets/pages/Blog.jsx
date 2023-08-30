@@ -5,7 +5,7 @@ import Heading from "../common/Heading";
 const Blog = () => {
   return (
     <>
-      <section className="blog">
+      <section className="blog ">
         <div className="container">
           <Heading title="Blog" />
           <div className="content grid3">
